@@ -654,12 +654,6 @@ def single_process():
     (pic, Del_points, avg_depth, rate_num_gather, rate_gather_area,
      slope, rate_surf) = barycenter(sum_area, thresh)
     # cv2.imwrite("G:/ZED/test/result.jpg", pic)
-    if rate_num_gather == 0:
-        rate_num_gather += 0.08
-        rate_gather_area += 0.08
-    elif rate_num_gather == 1:
-        rate_num_gather -= 0.08
-        rate_gather_area -= 0.08
 
     # print(Del_points)
 
